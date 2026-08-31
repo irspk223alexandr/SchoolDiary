@@ -15,6 +15,8 @@ const lessonTimesRoutes = require('./routes/lessonTimes.routes');
 
 const app = express();
 const gradesRoutes = require('./routes/grades.routes');
+console.log('🔍 DATABASE_URL:', process.env.DATABASE_URL);
+console.log('🔍 NODE_ENV:', process.env.NODE_ENV);
 app.use(cors({ origin: 'http://localhost:3000', credentials: true }));
 app.use(express.json());
 app.use(morgan('dev'));
