@@ -1,0 +1,14 @@
+.avatar-profile {
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-bottom: 10px;
+  }
+  
+  .avatar-card {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 15px;
+  }
