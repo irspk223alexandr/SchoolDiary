@@ -22,6 +22,7 @@ console.log('🔍 NODE_ENV:', process.env.NODE_ENV);
 // ✅ ИСПРАВЛЕННЫЙ CORS
 const allowedOrigins = [
   'http://localhost:3000',
+  'https://school-diary-7se2tbzyo-ss1dans-projects.vercel.app',
   'https://school-diary-six.vercel.app',
   'https://schooldiary-production.up.railway.app'
 ];
