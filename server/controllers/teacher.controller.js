@@ -97,11 +97,11 @@ exports.getTeacherById = async (req, res) => {
     teacher.taught_classes = classes.map(c => c.grade);
 
     // Предметы
-    const subjects = await db('schedule')
-      .join('subjects', 'schedule.subject_id', 'subjects.id')
-      .where('schedule.teacher_id', teacherId)
-      .distinct('subjects.id', 'subjects.name')
-      .select('subjects.id', 'subjects.name');
+    const subjects = await db('schedule_templates')
+  .join('subjects', 'schedule_templates.subject_id', 'subjects.id')
+  .where('schedule_templates.teacher_id', teacherId)
+  .distinct('subjects.id', 'subjects.name')
+  .select('subjects.id', 'subjects.name');
     teacher.subjects = subjects;
 
     // Роли текущего пользователя
